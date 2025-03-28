@@ -12,7 +12,9 @@ if(JSON.parse(localStorage.getItem("userList"))==null){
      userList = JSON.parse(localStorage.getItem("userList"));
 
 }
-
+window.setTimeout(() => {
+    alert("welcome to Users Site");
+}, 5000);
 let userRuleList = new Array();
 let r1 = new UserRule(1, "Admin", new Date());
 let r2 = new UserRule(2, "User", new Date());
