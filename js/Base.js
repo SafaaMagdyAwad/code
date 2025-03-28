@@ -14,7 +14,7 @@ if(JSON.parse(localStorage.getItem("userList"))==null){
 }
 window.setTimeout(() => {
     alert("welcome to Users Site");
-}, 5000);
+}, 1000);
 let userRuleList = new Array();
 let r1 = new UserRule(1, "Admin", new Date());
 let r2 = new UserRule(2, "User", new Date());
