@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="style.css" rel="styleSheet"/>
+    </head>
+    <body>
+        <a href="users.html">Show User List</a>
+        <h2>Add user </h2>
+        <form>
+            <table id="addUser">
+            <tr>
+                <td>
+                    <p>User Name</p>
+                </td>
+                <td>
+                    <input type="text" id="uname" /><br>
+                    <span id="nameS"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>User Email</p>
+                </td>
+                <td>
+                    <input type="text" id="uemail" /><br>
+                    <span id="emailS"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>User phone</p>
+                </td>
+                <td>
+                    <input type="text" id="phone" /><br>
+                    <span id="phoneS"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Birth Date</p>
+                </td>
+                <td>
+                    <input type="date" id="bDate" />
+                    <span id="bDateS"></span>
+                </td>
+            </tr>   
+            <tr>
+                <td>
+                    <p>
+                        User picture
+                    </p>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="radio" name="picture"  value="images/1.jpg" checked /><img src="images/1.jpg"  width="100" height="100"/>
+                            </td>
+                            <td>
+                                <input type="radio" name="picture"  value="images/2.jpg"/><img src="images/2.jpg"  width="100" height="100"/>
+                            </td>
+                            <td>
+                                <input type="radio" name="picture"  value="images/3.jpg"/><img src="images/3.jpg"  width="100" height="100"/>
+                            </td>
+                            <td>
+                                <input type="radio" name="picture"  value="images/4.jpg"/><img src="images/4.jpg"  width="100" height="100"/>
+                            </td>
+                            <td>
+                                <input type="radio" name="picture"  value="images/5.jpg"/><img src="images/5.jpg"  width="100" height="100"/>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr> 
+            
+            
+        </table>
+        <a id="adduser">Add user</a>
+        
+    </form>
+    
+    
+    
+    <script type="module" src="js/Base.js"></script>
+</body>
+</html>
