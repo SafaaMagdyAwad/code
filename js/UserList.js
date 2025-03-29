@@ -1,11 +1,31 @@
 
+let userList = JSON.parse(localStorage.getItem("userList")) || [];
+let searchElement = document.getElementById("searchInput");
+let searchbutton = document.getElementById("send");
+let resetButton=document.getElementById("reset");
+
+searchbutton.addEventListener("click", (e) => {
+    let search = searchElement.value.trim();
+    let res= userList.filter((el) => el.Email === search);
+    searchbutton.style.display="none";
+    resetButton.style.display="inline";
+    printUsers(res);
+    
+});
+
+resetButton.addEventListener("click",()=>{
+    searchbutton.style.display="inline";
+    resetButton.style.display="none";
+    printUsers(userList);
+});
 //userlist is stored in local storage
-let userList=JSON.parse(localStorage.getItem("userList"));
 // creating userDivs
 //loop start
-userList.forEach(user => {
+function printUsers(array){
     
-    let container=document.getElementById("container");///the container of all users
+let container=document.getElementById("container");///the container of all users
+container.innerHTML="";
+array.forEach(user => {
     let userDiv=document.createElement("div");
     let userImage=document.createElement("img");
     let userRule=document.createElement("p");
@@ -41,12 +61,7 @@ userList.forEach(user => {
 });
 
 
-let searchElement=document.getElementById("searchInput");
-let search=searchElement.value;
-let searchbutton=document.getElementById("send");
-searchbutton.addEventListener("click",(e)=>{
-    let res=userList.filter((el)=>{
-        return el.Email=search
-    });
-    console.log("search values",search);
-});
+}
+
+
+printUsers(userList);
