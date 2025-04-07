@@ -7,6 +7,4 @@ export default class User {
         this.bDate=birthdate;
         this.rule=RoleChip;
     }
-
-   
 }
