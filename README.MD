@@ -12,10 +12,10 @@
     </ul>
 <h4> 
     user rules are stored in an array called userRuleList that will be dispalyed in the htmlform by using DOM in <span style="color:green">AddUserRulesToForm.js</span>
-</h4>
+</h4><br><br><hr><hr>
 <p>
  validation rules are separated in
-<span style="color:green"> Validation.js File.</span> validation rules 
+<span style="color:green"> Validation.js File.</span> validation rules <br><br><hr><hr>
         <ul>
             <li>userName is required;</li>
             <li>email is 
@@ -34,21 +34,22 @@
                 </ul>
             </li>
         </ul>
-           
- <span style="color:lightGreen"> if a validation rule wasnt  true the usrer will not be added.</span>               
+           <br><br><hr><hr>
+ <span style="color:lightGreen"> if a validation rule wasnt  true the usrer will not be added.</span> <br><br><hr><hr>              
 
-<h2>the created users are stored in local storage</h2>      
-            
    <span style="color:lightYellow">
     index.html=====>add user form <br>
     users.html======>contains userlis
-   </span>
-<h3>
-UserList.js is used to add users(Stored in Local Storage) Using DOM. 
-</h3>
-
-<h2>
+   </span><br><br><hr><hr>
+<p>the created users are stored in local storage
+UserList.js is used to add users(Stored in Local Storage) Using DOM. <br><br><hr><hr>
+<ul>
+Search.js Contains 
+<li>search function</li>
+<li>printUsers function</li>
+</ul>
+<br><br><hr><hr>
 the Search is activated (Search using Email)
 the code o searc is Written in Search.js and imported to UserList.js
-when Search button is clicked a reset button appears 
-</h2>
+when Search button is clicked a reset button appears .
+</p>
